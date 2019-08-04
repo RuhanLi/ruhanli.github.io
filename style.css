@@ -1,0 +1,82 @@
+:root {
+    --black: #303030;
+    --white: #ededed;
+}
+
+* {
+    font-family: 'Abel', sans-serif;
+    font-weight: 400;
+}
+
+body {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 4rem 2rem;
+}
+
+div {
+    margin: auto;
+}
+
+div#about {
+    position: absolute;
+    top: calc(50% - 5rem);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    width: 70%;
+    display: table;
+    height: 5rem;
+}
+
+div#about h1#title {
+    display: table-cell;
+
+    width: 40%;
+    padding: 2rem;
+    vertical-align: middle;
+
+    border-right: 1px solid var(--white);
+
+    text-align: right;
+    font-size: 3rem;
+}
+
+div#about h2#blurb {
+    display: table-cell;
+
+    width: calc(60% - 4rem);
+    padding: 2rem;
+    vertical-align: middle;
+}
+
+div#links {
+    position: absolute;
+    top: calc(50% + 5rem);
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+}
+
+a + a {
+    margin-left: 4rem;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.8rem;
+
+    padding: 0.7rem 1.3rem;
+    border: 2px solid var(--white);
+
+    color: var(--white);
+    background-color: var(--black);
+    
+    transition: .2s ease;
+}
+
+a:hover {
+    background-color: var(--white);
+    color: var(--black);
+}
